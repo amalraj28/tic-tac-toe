@@ -27,6 +27,7 @@
 	font-size: 300%;
   box-shadow: 0 0 0.5rem black;
   color: rgb(200, 57, 81);
+  height: 25svh;
 
   &:hover {
     background-color: black;
@@ -36,7 +37,7 @@
 
 #reset {
   padding: 1rem;
-  margin-top: 5svh;
+  margin-top: 11svh;
   border-radius: 20px;
   border: 2px white solid;
   font-size: medium;
