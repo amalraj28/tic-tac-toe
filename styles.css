@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.game-area {
+  display: grid;
+  grid-template-columns: repeat(3, 15svw);
+  height: 70svh;
+  margin-top: 20px;
+  gap: 1.5vmin;
+  justify-content: center;
+  background-color: red;
+  border: 3px blue solid;
+  width: fit-content;
+  margin-left: 27.5svw;
+}
