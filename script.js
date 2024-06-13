@@ -22,22 +22,25 @@ boxes.forEach((box, index) => {
     if (gameOver) return;
     box.innerText = turn1 ? player1 : player2;
     box.disabled = true;
+    
     if (checkWinner()) {
       winnerText.textContent = `${box.innerText} won! Reset game to play again`;
       winnerText.style.visibility = 'visible';
       gameOver = true;
     }
-    turn1 = !turn1;
     
+    turn1 = !turn1;
   })
 })
-
 
 const resetGame = () => {
   winnerText.style.visibility = 'hidden';
   turn1 = true;
   gameOver = false;
-  boxes.forEach((box) => { box.innerText = ''; box.disabled = false;})
+  boxes.forEach((box) => { 
+    box.innerText = '';
+    box.disabled = false;
+  })
 }
 
 const checkWinner = () => {
